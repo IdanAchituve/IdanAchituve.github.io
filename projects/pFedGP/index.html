@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<!--    <meta property="og:image" content="https://avivnavon.github.io/ParetoHN/resources/mmnist_fashion_and_mnist_evolve.png" />-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Personalized Federated Learning with Gaussian Processes">
+    <meta name="author" content="
+	Idan Achituve,
+    Aviv Shamsian,
+    Aviv Navon,
+    Gal Chechik,
+	Ethan Fetaya"
+    >
+
+    <title>Personalized Federated Learning with Gaussian Processes</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+</head>
+
+<!-- MathJax -->
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <!-- <h1> <b>!!!WIP!!!</b> </h1> -->
+    <h1>Personalized Federated Learning with Gaussian Processes</h1>
+<!--    <h3>ICLR 2021</h3>-->
+    <hr>
+    <p class="authors">
+        <tr>
+			<span style="font-size:24px"><a href="https://idanachituve.github.io/">Idan Achituve</a><sup>1</sup></span>&nbsp;
+            <span style="font-size:24px"><a href="https://avivsham.github.io/">Aviv Shamsian</a><sup>1</sup></span>&nbsp;
+            <span style="font-size:24px"><a href="https://avivnavon.github.io/">Aviv Navon</a><sup>1</sup></span> &nbsp;
+        <tr>
+            <span style="font-size:24px"><a href="https://chechiklab.biu.ac.il/">Gal Chechik</a><sup>1,2</sup></span> &nbsp;
+			<span style="font-size:24px"><a href="http://www.eng.biu.ac.il/fetayae/">Ethan Fetaya</a><sup>1</sup></span> &nbsp;
+    </tr>
+    </p>
+
+    <br>
+    <br>
+    <table align=center>
+        <tr>
+            <td align=center>
+                <center>
+                    <span style="font-size:20px">
+                        <sup>1</sup>Bar-Ilan University
+                        <br>
+                        <sup>2</sup>NVIDIA Research
+                    </span>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://arxiv.org/abs/2106.15482">Paper</a>
+        <a class="btn btn-primary" href="https://github.com/IdanAchituve/pFedGP">Code</a>
+		<a class="btn btn-primary" href="https://drive.google.com/uc?id=1tz_lMUHojjXvdHiVaaBEw1fwItY1BrEc">Noisy-CIFAR-10</a>
+		<a class="btn btn-primary" href="https://drive.google.com/uc?id=1V-Dwfl6RXVpmKB2lZFIehhJcE5_rYs8i">Noisy-CIFAR-100</a>
+    </div>
+
+    
+
+</div>
+
+<div class="container">
+    <div class="section">
+         <figure>
+            <center>
+                <figcaption>Figure 1. Personalized Gaussian Process Federated (<i>pFedGP</i>) framework.</figcaption>
+                <img src="resources/pFedGP-Fig1.PNG" align="middle" style='width: 70%'>
+            </center>
+        </figure>
+        <hr>
+        <p>
+		Federated learning aims to learn a global model that performs well on client devices with limited cross-client communication. 
+		Personalized federated learning (PFL) further extends this setup to handle data heterogeneity between clients by learning personalized models. 
+		A key challenge in this setting is to learn effectively across clients even though each client has unique data that is often limited in size. 
+		We present <i>pFedGP<i>, a solution to PFL that is based on Gaussian processes (GPs) with deep kernel learning. 
+		GPs are highly expressive models that work well in the low data regime due to their Bayesian nature. 
+		However, applying GPs to PFL raises multiple challenges. Mainly, GPs performance depends heavily on access to a good kernel function, and learning a kernel requires a large training set. 
+		Therefore, we propose learning a shared kernel function across all clients, parameterized by a neural network, with a personal GP classifier for each client. 
+		We further extend pFedGP to include inducing points using two novel methods, the first helps to improve generalization in the low data regime and the second reduces the computational cost. 
+		We derive a PAC-Bayes generalization bound on novel clients and empirically show that it gives non-vacuous guarantees. 
+		Extensive experiments on standard PFL benchmarks with CIFAR-10, CIFAR-100, and CINIC-10, and on a new setup of learning under input noise show that pFedGP achieves 
+		well-calibrated predictions while significantly outperforming baseline methods, reaching up to 21% in accuracy gain.
+        </p>
+    </div>
+
+
+    <div class="section">
+        <center><h2>Experiments</h2></center>
+        <hr>
+        <h3>Heterogeneous Data</h3>
+        <hr>
+        <p>
+            <figure>
+            <center>
+                <figcaption>Table 1. <i>Heterogeneous data</i>. Test accuracy (± SEM) over 50,100,500 clients on the CIFAR-10, CIFAR-100, and CINIC-10 datasets.</figcaption>
+                <img src="resources/hetro_table.PNG" align="middle" style='max-width: 70%'>
+            </center>
+            </figure>
+
+        We compare pFedGP to previous studies on non-iid data distribution using CIFAR-10/100 and CINIC-10 datasets.
+        The results are presented in Table 1. pFedGP achieves large improvements up to 21% over all competing approaches.            
+        </p>
+    <!-- <div class="section"> -->
+        <br>
+        <h3>Calibration</h3>
+        <hr>
+        <p>
+            <figure>
+            <center>
+                <figcaption>Figure 1. <i>Calibration</i>. Reliability diagrams on CIFAR-100 with 50 clients. Each plot shows the expected 
+				& maximum calibration error (ECE & MCE) and the Brier Score (BRI). Lower is better. Diagonal indicates perfect calibration.<i>.</figcaption>
+                <img src="resources/calibration.PNG" align="middle" style='max-width: 80%'>
+            </center>
+            </figure>
+
+        A desired property from PFL classifiers is the ability to provide uncertainty estimation. 
+		For example, in decision support systems, such as in healthcare applications, the decision-maker should have an accurate estimation 
+		of the classifier confidence in the prediction. We quantify the uncertainty through calibration. 
+		Figure 1 compares all methods both visually and using common metrics on the CIFAR-100 dataset with 50 clients. 
+		Expected calibration error (ECE) measures the weighted average between the classifier confidence and accuracy. 
+		Maximum calibration error (MCE) takes the maximum instead of the average. And, Brier score (BRI) measures the average squared 
+		error between the labels and the prediction probabilities. The figure shows that pFedGP classifiers are best calibrated 
+		across all metrics in almost all cases. 
+        </p>
+		
+		<br>
+        <h3>PFL with Input Noise</h3>
+        <hr>
+        <p>
+            <figure>
+            <center>
+                <figcaption>Table 2. <i>Input noise</i>. Test accuracy (± SEM) over 100 clients on noisy CIFAR-100. We also provide the relative
+				accuracy decrease (%) w.r.t. the performance on the original CIFAR-100 data (see Table 1).<i></figcaption>
+                <img src="resources/input_noise.PNG" align="middle" style='max-width: 30%'>
+            </center>
+            </figure>
+
+        In real-world federated systems, the clients may employ different measurement devices for data collection (cameras, sensors, etc.), 
+		resulting in different input noise characteristics per client. We investigated pFedGP performance in this type of personalization. 
+		To simulate that, we partitioned CIFAR-10/100 to 100 clients, defined 57 unique distributions of image corruption noise, 
+		and we assigned a noise model to each client. Then for each example in each client we sampled a corruption noise according to the noise model allocated to that client. 
+		Results for CIFAR-100 are shown in Table 2. We observe a significant gap in favor of the pFedGP variants compared to baseline methods.
+        </p>
+		
+		<br>
+        <h3>Generalization to OOD Novel Clients</h3>
+        <hr>
+        <p>
+            <figure>
+            <center>
+                <figcaption>Figure 2. <i>Generalization to novel clients.</i> The generalization gap in accuracy between training and novel clients.</figcaption>
+                <img src="resources/generalization_to_ood_clients.png" align="middle" style='max-width: 50%'>
+            </center>
+            </figure>
+
+        FL are dynamic systems. For example, novel clients may enter the system after the model was trained, possibly with a data distribution shift. 
+		Adapting to a new OOD client is both challenging and important for real-world FL systems. To evaluate pFedGP in this scenario, 
+		we followed the learning protocol proposed in (shamsian et al., 2021). Figure 2 reports the generalization gap as a function of the 
+		Dirichlet parameter &alpha. The generalization gap is computed by taking the difference between the average test accuracy on ten novel clients 
+		and the average test accuracy on the ninety clients used for training. From the figure, here as well, pFedGP achieves the best generalization performance for all values of &alpha. 
+		Moreover, unlike baseline methods, pFedGP does not require <i>any</i> parameter tuning.
+        </p>
+        
+    </div>
+
+    <!-- <div class="section"> -->
+    
+
+
+<!--    <div class="section">-->
+<!--        <h2>Paper</h2>-->
+<!--        &lt;!&ndash; <hr> &ndash;&gt;-->
+<!--        <div>-->
+<!--            <div class="list-group">-->
+<!--                <a href="https://arxiv.org/abs/2010.04104"-->
+<!--                   class="list-group-item">-->
+<!--                   <center>-->
+<!--                    <img src="resources/paper.png" style="width:50%; margin-right:-20px; margin-top:-10px;">-->
+<!--                    </center>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="section">
+        <h2>Bibtex</h2>
+        <hr>
+        <div class="bibtexsection">
+ @inproceedings{achituve2021personalized,
+  title={Personalized Federated Learning with {G}aussian Processes},
+  author={Achituve, Idan and Shamsian, Aviv and Navon, Aviv and Chechik, Gal and Fetaya, Ethan},
+  booktitle={Proceedings of the 35th Conference on Neural Information Processing Systems},
+  year={2021}
+}
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+<hr>
+<footer>The website template is available at <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.</footer>
+
+</body>
+</html>
