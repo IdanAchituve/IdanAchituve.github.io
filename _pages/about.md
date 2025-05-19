@@ -12,3 +12,11 @@ I am interested in both theoretical and practical aspects of machine and deep le
 I hold a MSc in Computer Science and a BSc in Engineering, both with honors. Before my MSc degree, I worked for several years as a 
 Data Scientist at RSA. <br>
 For a list of my publications please see my Google scholar.
+
+Publications
+======
+
+**Bayesian Uncertainty for Gradient Aggregation in Multi-Task Learning**  
+Idan Achituve, Idit Diamant, Arnon Netzer, Gal Chechik, Ethan Fetaya  
+*International Conference on Machine Learning (ICML), 2024.*  
+[paper](https://arxiv.org/abs/2402.04005) | [code](https://github.com/ssi-research/BayesAgg_MTL)
