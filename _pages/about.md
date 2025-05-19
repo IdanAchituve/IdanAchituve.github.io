@@ -11,14 +11,20 @@ I hold a Ph.D. from Bar-Ilan University where I was supervised by Prof. Gal Chec
 I am interested in both theoretical and practical aspects of machine and deep learning across various domains, e.g., images, texts, speech, and exact sciences. In general, I find the probabilistic modeling approach most compelling. Most recently I have been working on probabilistic generative models and Bayesian deep learning.
 I hold a MSc in Computer Science and a BSc in Engineering, both with honors. Before my MSc degree, I worked for several years as a 
 Data Scientist at RSA. <br>
-For a list of my publications please see my Google scholar.
+
 
 Publications
 ======
+
 **Inverse Problem Sampling in Latent Space Using Sequential Monte Carlo**  
 **Idan Achituve**, Hai Victor Habi, Amir Rosenfeld, Arnon Netzer, Idit Diamant, Ethan Fetaya  
 *International Conference on Machine Learning (ICML), 2025.*  
 [paper](https://arxiv.org/abs/2502.05908) | [code](https://github.com/ssi-research/LD-SMC)
+
+
+**Few-Shot Speech Deepfake Detection Adaptation with Gaussian Processes**  
+Glazer Neta, Chernin David, **Idan Achituve**, Gannot Sharon, Ethan Fetaya  
+*Interspeech, 2025.*  
 
 
 **Efficient Image Restoration via Latent Consistency Flow Matching**  
@@ -120,4 +126,4 @@ Aviv Navon^, **Idan Achituve^** , Haggai Maron, Gal Chechik, Ethan Fetaya
 **Interpretable Online Banking Fraud Detection Based on Hierarchical Attention Mechanism**  
 **Idan Achituve**, Sarit Kraus and Jacob Goldberger  
 *IEEE Machine Learning for Signal Processing Workshop (MLSP), 2019.* 
-[paper] (https://IdanAchituve.github.io/files//Interpretable_Online_Banking_Fraud_Detection_Based_on_Hierarchical_Attention_Mechanism.pdf)
+[paper](https://IdanAchituve.github.io/files/Interpretable_Online_Banking_Fraud_Detection_Based_on_Hierarchical_Attention_Mechanism.pdf)
