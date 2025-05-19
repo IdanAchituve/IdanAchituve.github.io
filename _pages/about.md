@@ -11,3 +11,4 @@ I hold a Ph.D. from Bar-Ilan University where I was supervised by Prof. Gal Chec
 I am interested in both theoretical and practical aspects of machine and deep learning across various domains, e.g., images, texts, speech, and exact sciences. In general, I find the probabilistic modeling approach most compelling. Most recently I have been working on probabilistic generative models and Bayesian deep learning.
 I hold a MSc in Computer Science and a BSc in Engineering, both with honors. Before my MSc degree, I worked for several years as a 
 Data Scientist at RSA. <br>
+For a list of my publications please see my Google scholar.
