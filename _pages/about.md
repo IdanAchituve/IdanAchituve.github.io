@@ -22,7 +22,7 @@ Publications
 
 
 **Few-Shot Speech Deepfake Detection Adaptation with Gaussian Processes**  
-Glazer Neta, Chernin David, **Idan Achituve**, Gannot Sharon, Ethan Fetaya  
+Neta Glazer, David Chernin, **Idan Achituve**, Sharon Gannot, Ethan Fetaya  
 *Interspeech, 2025.*  
 
 
