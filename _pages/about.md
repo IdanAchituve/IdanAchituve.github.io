@@ -12,10 +12,6 @@ I am interested in both theoretical and practical aspects of machine and deep le
 I hold a MSc degree in Computer Science and a BSc degree in Engineering, both with honors. Before my MSc degree, I worked for several years as a Data Scientist at RSA. <br>
 My CV can be found [here](https://IdanAchituve.github.io/files/Idan_Achituve_Resume.pdf)
 
-# Updates
-# ======
-# **[May 19th, 2025]** Our paper *Few-Shot Speech Deepfake Detection Adaptation with Gaussian Processes* got accepted to Interspeech 2025! <br>
-# **[May 1st, 2025]** Our paper *Inverse Problem Sampling in Latent Space Using Sequential Monte Carlo* got accepted to ICML 2025! <br>
 
 Publications
 ======
