@@ -10,7 +10,7 @@ I am Idan, a researcher at Sony Israel. My position is academically inclined, ai
 I hold a Ph.D. from Bar-Ilan University where I was supervised by Prof. Gal Chechik (CS department and NVIDIA), and Dr. Ethan Fetaya (EE department).<br>
 I am interested in both theoretical and practical aspects of machine and deep learning across various domains, e.g., images, texts, speech, and exact sciences. In general, I find the probabilistic modeling approach most compelling. Most recently I have been working on probabilistic generative models and Bayesian deep learning.<br>
 I hold a MSc degree in Computer Science and a BSc degree in Engineering, both with honors. Before my MSc degree, I worked for several years as a Data Scientist at RSA. <br>
-My CV can be found [here](https://IdanAchituve.github.io/files/Idan_Achituve_Resume.pdf)
+My CV can be found [here](https://IdanAchituve.github.io/files/Idan_Achituve_Resume.pdf){:target="_blank"}
 
 
 Publications
@@ -126,4 +126,4 @@ Aviv Navon^, **Idan Achituve^** , Haggai Maron, Gal Chechik, Ethan Fetaya
 **Interpretable Online Banking Fraud Detection Based on Hierarchical Attention Mechanism**  
 **Idan Achituve**, Sarit Kraus and Jacob Goldberger  
 *IEEE Machine Learning for Signal Processing Workshop (MLSP), 2019.*  
-[paper](https://IdanAchituve.github.io/files/Interpretable_Online_Banking_Fraud_Detection_Based_on_Hierarchical_Attention_Mechanism.pdf)
+[paper](https://IdanAchituve.github.io/files/Interpretable_Online_Banking_Fraud_Detection_Based_on_Hierarchical_Attention_Mechanism.pdf){:target="_blank"}
