@@ -19,7 +19,7 @@ Publications
 **Inverse Problem Sampling in Latent Space Using Sequential Monte Carlo**  
 **Idan Achituve**, Hai Victor Habi, Amir Rosenfeld, Arnon Netzer, Idit Diamant, Ethan Fetaya  
 *International Conference on Machine Learning (ICML), 2025.*  
-[paper](https://arxiv.org/abs/2502.05908) | [code](https://github.com/ssi-research/LD-SMC)
+[paper](https://arxiv.org/abs/2502.05908) | [code](https://github.com/IdanAchituve/LD-SMC)
 
 
 **Few-Shot Speech Deepfake Detection Adaptation with Gaussian Processes**  
@@ -29,7 +29,7 @@ Neta Glazer, David Chernin, **Idan Achituve**, Sharon Gannot, Ethan Fetaya
 
 **Efficient Image Restoration via Latent Consistency Flow Matching**  
 Elad Cohen, **Idan Achituve**, Idit Diamant, Arnon Netzer, Hai Victor Habi  
-*Arxiv, 2025.*  
+*The British Machine Vision Conference (BMVC), 2025.*  
 [paper](https://arxiv.org/abs/2502.03500)
 
 
@@ -48,7 +48,7 @@ Idit Diamant, Amir Rosenfeld, **Idan Achituve**, Jacob Goldberger, Arnon Netzer
 **Bayesian Uncertainty for Gradient Aggregation in Multi-Task Learning**  
 **Idan Achituve**, Idit Diamant, Arnon Netzer, Gal Chechik, Ethan Fetaya  
 *International Conference on Machine Learning (ICML), 2024.*  
-[paper](https://arxiv.org/abs/2402.04005) | [code](https://github.com/ssi-research/BayesAgg_MTL)
+[paper](https://arxiv.org/abs/2402.04005) | [code](https://github.com/IdanAchituve/BayesAgg_MTL)
 
 
 **Lay-A-Scene: Personalized 3D object arrangement using text-to-image priors**  
